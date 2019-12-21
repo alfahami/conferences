@@ -1,6 +1,5 @@
 # Gestion de conférences
 Cette aplication est réalisée en HTML/CSS, JQUERY et PHP.
-
 L'application répond à la pluapart des demades du cahier de charge décrit ci-dessous.
 
 ## OS 
@@ -14,9 +13,7 @@ MySQL/MariaDB
 
 ## Installation
 Configurer votre virtualhost et donner comme hostname : ccc.fs.uit (ou autre nom que vous voulez).
-
 Le fichier ccc.sql contient le script de création des tables.
-
 Editer le fichier config.php pour ajouter le nom de votre BD, votre username, mot de passe et votre hôte.
 
 ## Test
@@ -35,9 +32,6 @@ L'utilisateur peut voir les informations de la conférence (appel à
 contribution, programme, ...), il peut aussi créer un compte sur le site pour
 soumettre un papier ou s'inscrire à la conférence.
 
-1- Modéliser cahier de charge à l’aide de diagramme de cas d’utilisation,
-diagramme de séquence, diagramme de communication, diagramme
-d’état, diagramme d’activité, diagramme de classe et diagramme
-package.
+1- Modéliser cahier de charge à l’aide de diagramme de cas d’utilisation, diagramme de séquence, diagramme de communication, diagramme d’état, diagramme d’activité, diagramme de classe et diagrammepackage.
 
 2- Réaliser une application correspondante au cahier de charge en PHP ou en JEE.

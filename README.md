@@ -14,7 +14,7 @@ MySQL/MariaDB
 ## Installation
 Configurer votre virtualhost et donner comme hostname : ccc.fs.uit (ou autre nom que vous voulez).\
 Le fichier ccc.sql contient le script de création des tables.\
-Editer le fichier config.php pour ajouter le nom de votre BD, votre username, mot de passe et votre hôte.
+Editer le fichier config.php pour ajouter le nom de votre BD, votre username, mot de passe et votre hôte.\
 Le fichier .htaccess exige une réécriture des liens au serveur appache n'oubliez pas d'autoriser la réecriture lors de la définition de votre virtualhost.
 
 ## Test

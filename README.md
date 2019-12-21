@@ -1,6 +1,5 @@
 # Gestion de conférences
 Cette aplication est réalisée en HTML/CSS, JQUERY et PHP.
-
 L'application répond à la pluapart des demades du cahier de charge décrit ci-dessous.
 
 ## OS 
@@ -13,7 +12,7 @@ Appache
 MySQL/MariaDB
 
 ## Installation
-Configurer votre virtualhost et donner comme hostname : ccc.fs.uit (ou autre nom que vous voulez.)
+Configurer votre virtualhost et donner comme hostname : ccc.fs.uit (ou autre nom que vous voulez).
 Le fichier ccc.sql contient le script de création des tables.
 Editer le fichier config.php pour ajouter le nom de votre BD, votre username, mot de passe et votre hôte.
 

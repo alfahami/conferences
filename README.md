@@ -25,7 +25,7 @@ Prof     : prof@github.com, password = prof \
 Auteur   : auteur@github.com, password = auteur \
 
 Pour l'administrateur : ccc.fs.uit/admins/connexion \
-Admin : admin@ccc.net, password = 1234 \  
+Admin : admin@ccc.net, password = 1234   
 
 ### Cahier de charge
 

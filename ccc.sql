@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 04, 2019 at 09:51 AM
+-- Generation Time: Dec 29, 2019 at 02:24 PM
 -- Server version: 5.6.37
 -- PHP Version: 5.6.31
 
@@ -166,7 +166,7 @@ CREATE TABLE IF NOT EXISTS `papiers` (
   `titre` varchar(45) NOT NULL,
   `note` text NOT NULL,
   `papier` longblob NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `papiers`
@@ -182,7 +182,8 @@ INSERT INTO `papiers` (`id_papier`, `auteur`, `etat`, `titre`, `note`, `papier`)
 (7, 'Steve Jobs', '', 'iOS', 'The one who instanciated this shit will die soon.', 0x43616e6164612e706466),
 (8, 'Steve Jobs', '', 'iOS', 'The one who instanciated this shit will die soon.', 0x43616e6164612e706466),
 (9, 'ABDESSAMAD', '', 'Neural Network', 'Fs. IBN TOFAYL', 0x50726163746963616c20504850204365727469666963617465202d205044462e706466),
-(10, 'ABDESSAMAD', '', 'Neural Network', 'J&#39;ai paris mon putain de master Ã  FEZ, c&#39;est pour Ã§a que je me fais de l&#39;argent en vous disant: Wach had l9diya c&#39;est claire?', 0x4578706f73c3a9204c696e75782e706466);
+(10, 'ABDESSAMAD', '', 'Neural Network', 'J&#39;ai paris mon putain de master Ã  FEZ, c&#39;est pour Ã§a que je me fais de l&#39;argent en vous disant: Wach had l9diya c&#39;est claire?', 0x4578706f73c3a9204c696e75782e706466),
+(11, 'Hafidhou', '', 'Algorithmique', 'Etudiant stagiaire Elosig', 0x41746f6d20456469746f7220496e74726f64756374696f6e2e706466);
 
 -- --------------------------------------------------------
 
@@ -251,7 +252,7 @@ CREATE TABLE IF NOT EXISTS `utilisateurs` (
   `statut` varchar(255) NOT NULL,
   `date_creation` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `conference` varchar(45) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `utilisateurs`
@@ -268,7 +269,14 @@ INSERT INTO `utilisateurs` (`id_utilisateur`, `email`, `mot_passe`, `nom`, `pren
 (8, 'behram@fs.uit', 'b768f429c7ea96f07266ca86b8501cb9', 'Behram', 'Mahamat', 'Etudiant', '2019-01-27 14:15:23', '0'),
 (9, 'bill@gate.net', 'e8375d7cd983efcbf956da5937050ffc', 'Bill', 'Gates', 'Auteur', '2019-01-27 17:15:14', '0'),
 (10, 'mark@jackma.net', '786f02ad12ae770c263e44dadea1ba55', 'Mark', 'Jack', 'Auteur', '2019-01-27 17:17:32', '0'),
-(11, 'auteur@auteur.net', 'dc6f74e5cffb424b6dad404be18ff056', 'auteur', 'auteur', 'Auteur', '2019-01-27 17:18:52', '0');
+(11, 'auteur@auteur.net', 'dc6f74e5cffb424b6dad404be18ff056', 'auteur', 'auteur', 'Auteur', '2019-01-27 17:18:52', '0'),
+(12, 'hafidhou@yahoo.com', '2d63f00fa71f46d5c66cb90873cfb4a9', 'Hafidhou', 'Maoulida', 'Etudiant', '2019-04-01 22:44:36', ''),
+(13, 'git@github.com', '5ff2a46f65d71b5c45588b103f9b4ee1', 'Git', 'GitHub', 'Etudiant', '2019-12-29 15:08:39', ''),
+(14, 'student@github.com', '5ff2a46f65d71b5c45588b103f9b4ee1', 'GitHub', 'Student', 'comocoder', '2019-12-29 15:09:55', ''),
+(15, 'teacher@github.com', '8d788385431273d11e8b43bb78f3aa41', 'GitHub', 'Teacher', 'Prof', '2019-12-29 15:11:48', ''),
+(16, 'etudiant@github.com', 'a3c6c43c72c71ed874d16ce12f8cede1', 'Git', 'Github', 'Etudiant', '2019-12-29 15:14:17', ''),
+(17, 'prof@github.com', 'd450c5dbcc10db0749277efc32f15f9f', 'Git', 'Prof', 'Professeur', '2019-12-29 15:15:23', ''),
+(18, 'auteur@github.com', 'dc6f74e5cffb424b6dad404be18ff056', 'Git', 'auteur', 'Auteur', '2019-12-29 15:17:20', '');
 
 --
 -- Indexes for dumped tables
@@ -361,7 +369,7 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT for table `papiers`
 --
 ALTER TABLE `papiers`
-  MODIFY `id_papier` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+  MODIFY `id_papier` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `sessions`
 --
@@ -376,7 +384,7 @@ ALTER TABLE `tutoriels`
 -- AUTO_INCREMENT for table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `id_utilisateur` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+  MODIFY `id_utilisateur` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

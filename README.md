@@ -18,9 +18,14 @@ Editer le fichier config.php pour ajouter le nom de votre BD, votre username, mo
 Le fichier .htaccess exige une réécriture des liens au serveur appache n'oubliez pas d'autoriser la réecriture lors de la définition de votre virtualhost.
 
 ## Test
+Les liens sont formattés de cette façon : ccc.fs.uit/controleur/methode(action).
+Donc pour se connecter, on se rend au lien : ccc.fs.uit/utilisateurs/connexion
+Etudiant : etudiant@github.com, password = etudiant
+Prof     : prof@github.com, password = prof
+Auteur   : auteur@github.com, password = auteur
 
-
-
+Pour l'administrateur : ccc.fs.uit/admins/connexion
+Admin : admin@ccc.net, password = 1234 
 
 ### Cahier de charge
 

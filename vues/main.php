@@ -20,7 +20,7 @@
 
 
 	<?php if($vue == '/admins/connexion.php') {  ?>
-
+			
 			<body  style="background: #8CB2CA;">
 
 				<div style="margin-top: 50px; margin-bottom: 0;"><?php Messages::display(); ?></div>
@@ -122,7 +122,7 @@
 										<li><a href="<?php echo ROOT_PATH; ?>admins/changerSessionPapier">Changer session papier</a></li>
 										<li><a href="<?php echo ROOT_PATH; ?>admins/statistiqueConference">statistique de la conférence</a></li>
 
-									<?php } else if($_SESSION['user_data']['statut_utilisateur'] == 'Auteur') { ?>
+									<?php } else if(isset($_SESSION['user_data']['nom_utilisateur']) && $_SESSION['user_data']['statut_utilisateur'] == 'Auteur'){ ?>
 										<li><a class="" href="<?php echo ROOT_PATH; ?>utilisateurs/soumettrePapier">Soumettre papier</a></li>
 										<li><a href="<?php echo ROOT_PATH;?>utilisateurs/supprimerPapiers">Supprimer papier</a></li>
 										<li><a href="<?php echo ROOT_PATH; ?>utilisateurs/changerProfil">Changer profil</a></li>
